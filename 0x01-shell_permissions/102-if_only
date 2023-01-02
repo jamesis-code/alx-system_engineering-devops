@@ -1,7 +1,2 @@
 #!/bin/bash
-# Check the current owner of the file
-CURRENT_OWNER=$(stat -c '%U' hello)
-
-# Change the owner to betty if the current owner is guillaume
-if ["$CURRENT_OWNER" == "guillaume"]; then
-	chown betty hello
+CURRENT_OWNER=$(stat -c '%U' hello) if ["$CURRENT_OWNER" == "guillaume"]; then chown betty hello
